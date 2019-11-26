@@ -21,15 +21,21 @@ namespace _3_2._2
                         array[i] = random.Next(-15, 15);
                         Console.Write(array[i] + " ");
                     }
+                    bool ind = false;
                     foreach (int num in array)
                     {
                         foreach (int num_1 in array)
                         {
-                            if (Math.Abs(num) == Math.Abs(num_1) && Math.Abs(num) - Math.Abs(num_1) > 5 || Math.Abs(num) - Math.Abs(num_1) > -5)
+                            if (Math.Abs(num) == Math.Abs(num_1) && Math.Abs(num) - Math.Abs(num_1) == 5 || Math.Abs(num_1) - Math.Abs(num) == 5)
                             {
-                                Console.Write("\nПара: " + num + ", " + num_1);
+                                ind = true;
+                                Console.Write("\nПара: " + Math.Abs(num) + ", " + Math.Abs(num_1));
                             }
                         }
+                    }
+                    if (ind == false)
+                    {
+                        Console.Write("\nТаких пар в массиве нет.");
                     }
                 }
                 catch (FormatException)
