@@ -35,7 +35,7 @@ namespace _3_2._2
                     }
                     if (ind == false)
                     {
-                        Console.Write("\nТаких пар в массиве нет.");
+                        Console.WriteLine("Таких пар в массиве нет.");
                     }
                 }
                 catch (FormatException)
