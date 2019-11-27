@@ -28,6 +28,7 @@ namespace _3_1._1
                             Console.Write("\nРезультат: " + element);
                         }
                     }
+                    Array.Reverse(array);
                 }
                 catch (FormatException)
                 {
