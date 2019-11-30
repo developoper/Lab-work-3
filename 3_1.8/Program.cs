@@ -25,7 +25,7 @@ namespace _3_1._8
                             for (int j = 0; j < array.GetLength(1); j++)
                             {
                                 array[i, j] = random.Next(0, 9);
-                                Console.Write($"{array[i, j],-3}");
+                                Console.Write($"{array[i, j], -3}");
                             }
                             Console.WriteLine();
                         }
